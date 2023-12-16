@@ -28,6 +28,8 @@ export default class extends Generator {
 }
 ```
 
+Follow the official [Yeoman documentation](https://yeoman.io/authoring/) for the details about creating generators.
+
 ## Website
 
 Visit the website:
