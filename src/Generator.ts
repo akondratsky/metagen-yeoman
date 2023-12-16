@@ -1,9 +1,9 @@
-import YeomanGenerator from 'yeoman-generator';
+import YeomanGenerator, { GeneratorOptions } from 'yeoman-generator';
 import path from 'node:path';
 import { MetaGenerator, PayloadObject, Tree } from '@metagen/core';
 import { mkdirpSync } from 'mkdirp';
 
-export class Generator extends YeomanGenerator {
+export class Generator<T extends GeneratorOptions = GeneratorOptions> extends YeomanGenerator<T> {
   /**
    * Renders Metagen template
    * @param template - path to a meta template, does not support wildcards
