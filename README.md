@@ -28,3 +28,8 @@ export default class extends Generator {
 }
 ```
 
+## Website
+
+Visit the website:
+
+https://akondratsky.github.io/metagen/
