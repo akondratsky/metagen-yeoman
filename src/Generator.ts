@@ -4,6 +4,12 @@ import { MetaGenerator, PayloadObject, Tree } from '@metagen/core';
 import { mkdirpSync } from 'mkdirp';
 
 export default class Generator extends YeomanGenerator {
+  /**
+   * Renders Metagen template
+   * @param template - path to a meta template, does not support wildcards
+   * @param destination - the folder to which templates should be rendered
+   * @param payload - context for rendering templates
+   */
   public renderMetaTemplate(
     template: string,
     destination: string,
@@ -14,6 +20,7 @@ export default class Generator extends YeomanGenerator {
       destination,
       payload,
       isDryRun: true,
+      isSilent: true,
     });
     trees.forEach((node) => this.writeTree(node, destination));
   }

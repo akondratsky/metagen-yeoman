@@ -9,13 +9,14 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@metagen/core": "2.0.2",
+    "@metagen/core": "2.1.0",
     "mkdirp": "3.0.1",
     "yeoman-generator": "5.10.0"
   },
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
+    "prepare": "husky install",
     "test": "jest",
     "build": "rimraf ./dist tsconfig.lib.tsbuildinfo && bun run build:tsc && bun ./dist.ts",
     "build:tsc": "tsc --project tsconfig.lib.json",
