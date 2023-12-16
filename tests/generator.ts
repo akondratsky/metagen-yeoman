@@ -1,4 +1,4 @@
-import Generator from '../src/Generator';
+import { Generator } from '../src/Generator';
 
 export default class extends Generator {
   writing() {

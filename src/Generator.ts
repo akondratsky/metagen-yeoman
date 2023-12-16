@@ -3,7 +3,7 @@ import path from 'node:path';
 import { MetaGenerator, PayloadObject, Tree } from '@metagen/core';
 import { mkdirpSync } from 'mkdirp';
 
-export default class Generator extends YeomanGenerator {
+export class Generator extends YeomanGenerator {
   /**
    * Renders Metagen template
    * @param template - path to a meta template, does not support wildcards
