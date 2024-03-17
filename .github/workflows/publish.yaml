@@ -17,7 +17,7 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:
-          version: 1.0.7
+          bun-version: 1.0.31
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
