@@ -13,7 +13,7 @@ npm i yeoman-generator @metagen/yeoman-generator
 Create your generator:
 
 ```ts
-import Generator from '@metagen/yeoman-generator';
+import { Generator } from '@metagen/yeoman-generator';
 
 export default class extends Generator {
   writing() {
