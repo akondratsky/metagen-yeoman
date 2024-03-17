@@ -13,7 +13,7 @@
   "parserOptions": {
     "ecmaVersion": "latest",
     "project": [
-      "tsconfig.lib.json",
+      "tsconfig.lib.esm.json",
       "tsconfig.scripts.json",
       "tsconfig.test.json"
     ]

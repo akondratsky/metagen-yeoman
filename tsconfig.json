@@ -12,14 +12,9 @@
     "skipLibCheck": true
   },
   "references": [
-    {
-      "path": "./tsconfig.lib.json"
-    },
-    {
-      "path": "./tsconfig.test.json"
-    },
-    {
-      "path": "./tsconfig.scripts.json"
-    }
+    { "path": "./tsconfig.lib.cjs.json" },
+    { "path": "./tsconfig.lib.esm.json" },
+    { "path": "./tsconfig.test.json" },
+    { "path": "./tsconfig.scripts.json" }
   ]
 }
