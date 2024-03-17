@@ -1,3 +1,5 @@
 import { Generator } from './Generator';
 
-export default Generator;
+export {
+  Generator,
+};

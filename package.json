@@ -18,10 +18,12 @@
   "scripts": {
     "prepare": "husky install",
     "test": "jest",
-    "build": "rimraf ./dist tsconfig.lib.tsbuildinfo && bun run build:tsc && bun ./dist.ts",
-    "build:tsc": "tsc --project tsconfig.lib.json",
+    "build": "rimraf ./dist && bun run build:tsc && bun ./dist.ts",
+    "build:tsc": "bun run build:tsc:esm && bun run build:tsc:cjs",
+    "build:tsc:esm": "tsc --project tsconfig.lib.esm.json",
+    "build:tsc:cjs": "tsc --project tsconfig.lib.cjs.json",
     "lint": "bun run lint:tsc && eslint src/* tests",
-    "lint:tsc": "tsc --project tsconfig.test.json --noEmit && tsc --project tsconfig.lib.json --noEmit"
+    "lint:tsc": "tsc --project tsconfig.test.json --noEmit && tsc --project tsconfig.lib.esm.json --noEmit"
   },
   "devDependencies": {
     "@commitlint/cli": "17.8.0",
