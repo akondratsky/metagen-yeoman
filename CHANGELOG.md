@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/akondratsky/metagen-yeoman/compare/v1.0.3...v1.0.4) (2024-03-30)
+
+
+### Bug Fixes
+
+* bump @metagen/core ([a4df7f9](https://github.com/akondratsky/metagen-yeoman/commit/a4df7f9b7e88f6621133f90051715a1ba28aae2d))
+
 ## [1.0.3](https://github.com/akondratsky/metagen-yeoman/compare/v1.0.2...v1.0.3) (2024-03-30)
 
 
