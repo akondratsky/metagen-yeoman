@@ -1,7 +1,7 @@
-import YeomanGenerator, { GeneratorOptions } from 'yeoman-generator';
 import path from 'node:path';
-import { MetaGenerator, PayloadObject, Tree } from '@metagen/core';
 import { mkdirpSync } from 'mkdirp';
+import YeomanGenerator, { type GeneratorOptions } from 'yeoman-generator';
+import { MetaGenerator, type PayloadObject, type Tree } from '@metagen/core';
 
 export class Generator<T extends GeneratorOptions = GeneratorOptions> extends YeomanGenerator<T> {
   /**
