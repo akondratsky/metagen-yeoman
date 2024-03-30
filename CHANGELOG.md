@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/akondratsky/metagen-yeoman/compare/v1.0.2...v1.0.3) (2024-03-30)
+
+
+### Bug Fixes
+
+* add ESM support ([2596370](https://github.com/akondratsky/metagen-yeoman/commit/2596370ee6d704849f1589221c284e136006c6cc))
+
 ## [1.0.2](https://github.com/akondratsky/metagen-yeoman/compare/v1.0.1...v1.0.2) (2024-03-17)
 
 
